@@ -49,7 +49,7 @@ export const RitualLogsTab: React.FC = () => {
   return (
     <div className="mt-8 space-y-8">
       {/* Top Live Weather Atmosphere Dashboard Banner - Large Panoramic Showcase */}
-      <div className="relative min-h-[300px] overflow-hidden rounded-3xl border border-black/[0.08] shadow-2xl backdrop-blur-2xl transition-all duration-300 sm:min-h-[360px] md:min-h-[380px] dark:border-white/[0.12]">
+      <div className="relative min-h-75 overflow-hidden rounded-3xl border border-black/8 shadow-2xl backdrop-blur-2xl transition-all duration-300 sm:min-h-90 md:min-h-95 dark:border-white/12">
         {/* Background Sky Image according to timeSlot */}
         <div className="absolute inset-0 z-0">
           {timeSlot === 'morning' ? (
@@ -57,14 +57,14 @@ export const RitualLogsTab: React.FC = () => {
               className="h-full w-full bg-cover bg-center transition-all duration-700 hover:scale-105"
               style={{ backgroundImage: `url(${morningSkyImg})` }}
             >
-              <div className="h-full w-full bg-gradient-to-t from-black/85 via-black/40 to-black/15 backdrop-blur-[0.5px]" />
+              <div className="h-full w-full bg-linear-to-t from-black/85 via-black/40 to-black/15 backdrop-blur-[0.5px]" />
             </div>
           ) : timeSlot === 'evening' ? (
             <div
               className="h-full w-full bg-cover bg-center transition-all duration-700 hover:scale-105"
               style={{ backgroundImage: `url(${eveningSkyImg})` }}
             >
-              <div className="h-full w-full bg-gradient-to-t from-black/85 via-black/45 to-black/20 backdrop-blur-[0.5px]" />
+              <div className="h-full w-full bg-linear-to-t from-black/85 via-black/45 to-black/20 backdrop-blur-[0.5px]" />
             </div>
           ) : (
             <div className="grid h-full w-full grid-cols-2 transition-all duration-700">
@@ -72,13 +72,13 @@ export const RitualLogsTab: React.FC = () => {
                 className="relative h-full w-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${morningSkyImg})` }}
               >
-                <div className="h-full w-full bg-gradient-to-t from-black/85 via-black/40 to-black/15" />
+                <div className="h-full w-full bg-linear-to-t from-black/85 via-black/40 to-black/15" />
               </div>
               <div
                 className="relative h-full w-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${eveningSkyImg})` }}
               >
-                <div className="h-full w-full bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
+                <div className="h-full w-full bg-linear-to-t from-black/85 via-black/45 to-black/20" />
               </div>
             </div>
           )}
@@ -116,7 +116,7 @@ export const RitualLogsTab: React.FC = () => {
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             {/* Left: Weather Status & Motto */}
             <div className="max-w-2xl space-y-2">
-              <h3 className="text-2xl font-black tracking-tight text-white drop-shadow-lg sm:text-3xl md:text-4xl">
+              <h3 className="text-2xl font-black tracking-tighter text-white drop-shadow-lg sm:text-2xl md:text-2xl">
                 {timeSlot === 'morning'
                   ? '☀️ 상쾌한 아침 · 몰입과 준비의 일출'
                   : timeSlot === 'evening'
@@ -152,7 +152,7 @@ export const RitualLogsTab: React.FC = () => {
       </div>
 
       {/* Student-Selected Highlights (Weather App Highlights Widget) */}
-      <div className="rounded-3xl border border-black/[0.05] bg-neutral-100/70 p-5 backdrop-blur-xl sm:p-6 dark:border-white/[0.06] dark:bg-neutral-800/40">
+      <div className="rounded-3xl border border-black/5 bg-neutral-100/70 p-5 backdrop-blur-xl sm:p-6 dark:border-white/6 dark:bg-neutral-800/40">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2.5 text-neutral-900 dark:text-white">
             <div className="flex h-7 w-7 items-center justify-center rounded-xl bg-blue-500 text-white shadow-sm shadow-blue-500/30">
@@ -174,7 +174,7 @@ export const RitualLogsTab: React.FC = () => {
           {RITUAL_LOGS.map((log) => (
             <div
               key={`highlight-${log.id}`}
-              className="group flex flex-col justify-between rounded-2xl border border-black/[0.04] bg-white/90 p-4 shadow-sm backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-black/[0.1] hover:shadow-md dark:border-white/[0.06] dark:bg-neutral-900/90 dark:hover:border-white/[0.15]"
+              className="group flex flex-col justify-between rounded-2xl border border-black/4 bg-white/90 p-4 shadow-sm backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-black/10 hover:shadow-md dark:border-white/6 dark:bg-neutral-900/90 dark:hover:border-white/15"
             >
               <div className="flex items-center justify-between text-xs">
                 <div className="flex items-center gap-1.5 font-mono font-semibold text-neutral-600 dark:text-neutral-300">
@@ -243,14 +243,14 @@ export const RitualLogsTab: React.FC = () => {
           </div>
 
           {/* iOS Style Search Input */}
-          <div className="relative min-w-[260px]">
+          <div className="relative min-w-65">
             <Search className="pointer-events-none absolute top-1/2 left-3.5 h-3.5 w-3.5 -translate-y-1/2 text-neutral-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="날짜 또는 키워드 검색..."
-              className="w-full rounded-2xl border border-black/[0.06] bg-neutral-100/80 py-2 pr-9 pl-9 text-xs text-neutral-900 placeholder-neutral-400 backdrop-blur-md transition-all focus:border-blue-500 focus:bg-white focus:outline-none dark:border-white/[0.08] dark:bg-neutral-800/60 dark:text-white dark:focus:bg-neutral-900"
+              className="w-full rounded-2xl border border-black/6 bg-neutral-100/80 py-2 pr-9 pl-9 text-xs text-neutral-900 placeholder-neutral-400 backdrop-blur-md transition-all focus:border-blue-500 focus:bg-white focus:outline-none dark:border-white/8 dark:bg-neutral-800/60 dark:text-white dark:focus:bg-neutral-900"
             />
             {searchQuery && (
               <button
@@ -346,10 +346,10 @@ export const RitualLogsTab: React.FC = () => {
             return (
               <div
                 key={log.id}
-                className="flex flex-col justify-between overflow-hidden rounded-3xl border border-black/[0.06] bg-white/85 shadow-lg backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:border-black/[0.15] hover:shadow-2xl dark:border-white/[0.08] dark:bg-neutral-900/75 dark:hover:border-white/[0.2]"
+                className="flex flex-col justify-between overflow-hidden rounded-3xl border border-black/6 bg-white/85 shadow-lg backdrop-blur-2xl transition-all duration-300 hover:-translate-y-1 hover:border-black/15 hover:shadow-2xl dark:border-white/8 dark:bg-neutral-900/75 dark:hover:border-white/20"
               >
                 {/* Card Top Title Row */}
-                <div className="flex items-center justify-between border-b border-black/[0.04] bg-neutral-50/80 px-5 py-3.5 text-xs dark:border-white/[0.06] dark:bg-neutral-800/50">
+                <div className="flex items-center justify-between border-b border-black/4 bg-neutral-50/80 px-5 py-3.5 text-xs dark:border-white/6 dark:bg-neutral-800/50">
                   <div className="flex items-center gap-2.5">
                     <span className="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-950 font-mono text-[11px] font-bold text-white shadow-xs dark:bg-white dark:text-neutral-950">
                       {idx + 1}
@@ -370,13 +370,13 @@ export const RitualLogsTab: React.FC = () => {
                 <div className="flex flex-1 flex-col gap-5 p-5">
                   {/* Morning Ritual Weather Pod - Large Image Showcase */}
                   {timeSlot !== 'evening' && (
-                    <div className="overflow-hidden rounded-2xl border border-amber-500/20 bg-amber-500/[0.03] shadow-md transition-colors dark:border-amber-400/20 dark:bg-amber-400/[0.03]">
+                    <div className="overflow-hidden rounded-2xl border border-amber-500/20 bg-amber-500/3 shadow-md transition-colors dark:border-amber-400/20 dark:bg-amber-400/3">
                       {/* Large Weather Sky Showcase Window for Morning */}
                       <div
                         className="relative flex h-36 flex-col justify-between overflow-hidden bg-cover bg-center p-4 text-white sm:h-40"
                         style={{ backgroundImage: `url(${morningSkyImg})` }}
                       >
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/15 backdrop-blur-[0.5px]" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/35 to-black/15 backdrop-blur-[0.5px]" />
                         <div className="relative z-10 flex items-center justify-between">
                           <div className="flex items-center gap-2">
                             <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-amber-500/80 text-white shadow-md backdrop-blur-md">
@@ -400,7 +400,7 @@ export const RitualLogsTab: React.FC = () => {
 
                       {/* Morning Content Blocks */}
                       <div className="space-y-3 p-4 text-xs leading-relaxed text-neutral-700 dark:text-neutral-300">
-                        <div className="rounded-xl border border-amber-500/10 bg-amber-500/[0.04] p-3 dark:border-amber-400/10 dark:bg-amber-400/[0.04]">
+                        <div className="rounded-xl border border-amber-500/10 bg-amber-500/4 p-3 dark:border-amber-400/10 dark:bg-amber-400/4">
                           <div className="flex items-center gap-1.5 text-xs font-bold text-amber-800 dark:text-amber-300">
                             <Sun className="h-3.5 w-3.5" />
                             <span>편안했던 장면</span>
@@ -410,7 +410,7 @@ export const RitualLogsTab: React.FC = () => {
                           </p>
                         </div>
 
-                        <div className="rounded-xl border border-amber-500/10 bg-amber-500/[0.04] p-3 dark:border-amber-400/10 dark:bg-amber-400/[0.04]">
+                        <div className="rounded-xl border border-amber-500/10 bg-amber-500/4 p-3 dark:border-amber-400/10 dark:bg-amber-400/4">
                           <div className="flex items-center gap-1.5 text-xs font-bold text-amber-800 dark:text-amber-300">
                             <Flame className="h-3.5 w-3.5" />
                             <span>강점 발휘 일화</span>
@@ -440,13 +440,13 @@ export const RitualLogsTab: React.FC = () => {
 
                   {/* Evening Ritual Weather Pod - Large Image Showcase */}
                   {timeSlot !== 'morning' && (
-                    <div className="overflow-hidden rounded-2xl border border-indigo-500/20 bg-indigo-500/[0.03] shadow-md transition-colors dark:border-indigo-400/20 dark:bg-indigo-400/[0.03]">
+                    <div className="overflow-hidden rounded-2xl border border-indigo-500/20 bg-indigo-500/3 shadow-md transition-colors dark:border-indigo-400/20 dark:bg-indigo-400/3">
                       {/* Large Weather Sky Showcase Window for Evening */}
                       <div
                         className="relative flex h-36 flex-col justify-between overflow-hidden bg-cover bg-center p-4 text-white sm:h-40"
                         style={{ backgroundImage: `url(${eveningSkyImg})` }}
                       >
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 backdrop-blur-[0.5px]" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/20 backdrop-blur-[0.5px]" />
                         <div className="relative z-10 flex items-center justify-between">
                           <div className="flex items-center gap-2">
                             <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-indigo-600/80 text-white shadow-md backdrop-blur-md">
@@ -470,7 +470,7 @@ export const RitualLogsTab: React.FC = () => {
 
                       {/* Evening Content Blocks */}
                       <div className="space-y-3 p-4 text-xs leading-relaxed text-neutral-700 dark:text-neutral-300">
-                        <div className="rounded-xl border border-indigo-500/10 bg-indigo-500/[0.04] p-3 dark:border-indigo-400/10 dark:bg-indigo-400/[0.04]">
+                        <div className="rounded-xl border border-indigo-500/10 bg-indigo-500/4 p-3 dark:border-indigo-400/10 dark:bg-indigo-400/4">
                           <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-800 dark:text-indigo-300">
                             <Moon className="h-3.5 w-3.5" />
                             <span>하루 돌아봄</span>
@@ -488,7 +488,7 @@ export const RitualLogsTab: React.FC = () => {
                           <p className="mt-1.5 leading-relaxed">{eveningGratitude}</p>
                         </div>
 
-                        <div className="rounded-xl border border-blue-500/10 bg-blue-500/[0.04] p-3 dark:border-blue-400/10 dark:bg-blue-400/[0.04]">
+                        <div className="rounded-xl border border-blue-500/10 bg-blue-500/4 p-3 dark:border-blue-400/10 dark:bg-blue-400/4">
                           <div className="flex items-center gap-1.5 text-xs font-bold text-blue-800 dark:text-blue-300">
                             <ShieldCheck className="h-3.5 w-3.5" />
                             <span>극복한 고비</span>
