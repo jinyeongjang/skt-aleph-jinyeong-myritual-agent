@@ -135,7 +135,7 @@ export const STUDENT_INFO = {
   email: 'jinyeongjang@users.noreply.github.com',
   github: 'https://github.com/jinyeongjang',
   portfolioRepo: 'https://github.com/jinyeongjang/skt-aleph-jinyeong-myritual-agent',
-  demoUrl: 'https://skt-aleph-jinyeongjang-myblog.vercel.app',
+  demoUrl: 'https://skt-aleph-jinyeong-myritual-agent.vercel.app',
 };
 
 // 2. assets/myritual.json 기반 실제 30일치 리추얼 기록 데이터 (T09-C01, T09-C02)

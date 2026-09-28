@@ -7,13 +7,13 @@
 - **제출할 과제**: T09 · 나를 말하는 에이전트: 리추얼 기록에서 내 강점과 이야기를 찾습니다
 - **수강생 성명**: 장진영 (Jinyeong Jang · T09-C01)
 - **권장 제출물 (서사 문서 파일 1개 · T09-C18)**: `NARRATIVE.md` (단일 마크다운 파일)
-- **포트폴리오 뼈대 URL (선택 · T09-C19)**: https://skt-aleph-jinyeongjang-myblog.vercel.app/#ritual-agent (무로그인 공개 접속)
+- **포트폴리오 뼈대 URL (선택 · T09-C19)**: https://skt-aleph-jinyeong-myritual-agent.vercel.app/#ritual-agent (무로그인 공개 접속)
 
 ---
 
 ## 🔍 2. 짧은 확인 방법 4줄 (T09-C17)
 
-1. **① 어디로 가나요**: 브라우저 새 시크릿 창을 열고 포트폴리오 배포 웹(https://skt-aleph-jinyeongjang-myblog.vercel.app)에 접속하여 상단 메뉴의 **[리추얼 에이전트]**(`#ritual-agent`)로 이동하거나, 단일 서사 문서 파일 `NARRATIVE.md`를 엽니다.
+1. **① 어디로 가나요**: 브라우저 새 시크릿 창을 열고 포트폴리오 배포 웹(https://skt-aleph-jinyeong-myritual-agent.vercel.app)에 접속하여 상단 메뉴의 **[리추얼 에이전트]**(`#ritual-agent`)로 이동하거나, 단일 서사 문서 파일 `NARRATIVE.md`를 엽니다.
 2. **② 세 단계 안에 무엇을 하나요**:
    - **1단계**: `[01 // 리추얼 기록 뷰어]` 탭에서 30일치 기록과 동료 이름 자동 마스킹 및 텍스트 파일 다운로드를 확인합니다.
    - **2단계**: `[03 // 강점 지도]` 탭에서 3대 강점(원리 탐구, 조력 리더십, 루틴/회복탄력성)과 학생이 지운 과장 항목 3건 및 이유를 확인합니다.

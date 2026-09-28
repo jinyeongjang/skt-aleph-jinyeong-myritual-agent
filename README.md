@@ -3,7 +3,7 @@
 > **SKT ALEPH 1기 기업 현장 중심 보안 & 네트워크 인프라 트랙**  
 > 매일 아침저녁으로 남긴 30일간의 리추얼 기록을 재료로 강점과 이야기를 발굴하는 **나를 말하는 에이전트(과제 9)** 중심의 반응형 모던 포트폴리오 웹입니다.
 
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-black?style=flat&logo=vercel)](https://skt-aleph-jinyeongjang-myblog.vercel.app)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-black?style=flat&logo=vercel)](https://skt-aleph-jinyeong-myritual-agent.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/jinyeongjang/skt-aleph-jinyeong-myritual-agent)
 [![Narrative Document](https://img.shields.io/badge/Document-NARRATIVE.md-blue?style=flat&logo=markdown)](NARRATIVE.md)
 [![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=flat&logo=react)](https://react.dev)
@@ -21,7 +21,7 @@
 4. [💻 로컬 개발 및 품질 검증 스크립트](#-로컬-개발-및-품질-검증-스크립트)
 5. [🤖 과제 9: 나를 말하는 에이전트 — 제출서 (Submission)](#-과제-9-나를-말하는-에이전트--제출서-submission)
    - [1. 제출 링크 및 서사 문서](#1-제출-링크-및-서사-문서)
-   - [2. 짧은 확인 방법 4줄 (T09-C17)](#2-짧은-확인-방법-4줄-t09-c17)
+   - [2. 재현·통과 확인 4가지 (T09-C17)](#2-재현통과-확인-4가지-t09-c17)
    - [3. AI와 나의 판단 3줄 (T09-C16)](#3-ai와-나의-판단-3줄-t09-c16)
    - [4. 에이전트 5대 규칙 및 우선순위 1줄 (T09-C03 ~ T09-C05)](#4-에이전트-5대-규칙-및-우선순위-1줄-t09-c03--t09-c05)
    - [5. 상위 3대 강점 지도 & 지운 항목과 이유 (T09-C06 ~ T09-C10)](#5-상위-3대-강점-지도--지운-항목과-이유-t09-c06--t09-c10)
@@ -121,21 +121,24 @@ npm run build
 
 ### 1. 제출 링크 및 서사 문서
 
-- **결과물 주소 (무로그인 공개 웹 · T09-C19)**: [https://skt-aleph-jinyeongjang-myblog.vercel.app](https://skt-aleph-jinyeongjang-myblog.vercel.app)
+- **결과물 주소 (무로그인 공개 웹 · T09-C19)**: [https://skt-aleph-jinyeong-myritual-agent.vercel.app](https://skt-aleph-jinyeong-myritual-agent.vercel.app)
 - **소스 주소 (GitHub 공개 레포지토리)**: [https://github.com/jinyeongjang/skt-aleph-jinyeong-myritual-agent](https://github.com/jinyeongjang/skt-aleph-jinyeong-myritual-agent)
 - **공식 서사 문서 (단일 MD 파일 · T09-C18)**: [`NARRATIVE.md`](NARRATIVE.md)
 
 ---
 
-### 2. 짧은 확인 방법 4줄 (T09-C17)
+### 2. 재현·통과 확인 4가지 (T09-C17)
 
-1. **① 어디로 가나요**: 브라우저 새 시크릿 창을 열고 [https://skt-aleph-jinyeongjang-myblog.vercel.app](https://skt-aleph-jinyeongjang-myblog.vercel.app)에 접속하여 `#ritual-agent` (리추얼 에이전트) 섹션으로 이동하거나, 단일 서사 문서 [`NARRATIVE.md`](NARRATIVE.md)를 엽니다.
-2. **② 세 단계 안에 무엇을 하나요**:
-   - 1단계: `[01 // 리추얼 기록 뷰어]` 탭에서 학생이 직접 선별한 날짜별 핵심 발췌 대목과 리추얼 상세 기록을 확인합니다.
-   - 2단계: `[02 // 에이전트 5대 규칙]` 및 `[03 // 강점 지도 & 지운 항목]` 탭에서 5대 규칙과 3대 강점, 학생이 지운 항목 3건 및 지운 이유를 확인합니다.
-   - 3단계: `[04 // 회복탄력성 서사]` 및 `[05 // 뼈대 & 매핑]` 탭에서 3부 회복탄력성 서사(3인칭/1인칭), 동료 2인의 무명 피드백, 1~8번 과제 매핑 포트폴리오 뼈대 및 약 1,000자 자기소개서 초안을 확인합니다.
-3. **③ 무엇이 보이면 통과인가요**: 학생 본인 이름(`장진영`)이 서사 문서 첫머리에 명시되어 있고, 리추얼 발췌 대목(날짜 포함), 에이전트 5대 규칙 및 우선순위, 강점 지도 3개 및 지운 이유, 3인칭/1인칭 서사, 동료 무명 피드백, 1~8번 과제 매핑 포트폴리오 뼈대가 온전히 보이면 통과입니다.
-4. **④ 안 될 때 무엇이 보이나요**: 로그인/비밀번호 입력 창이 요구되거나, 본인 이름 외 타인 실명/연락처가 노출되거나, 지운 항목 및 이유가 누락되어 있거나, 서사 문서가 비밀번호 없이 열리지 않는 경우입니다.
+1. **① 어디서 확인하나요**:
+   - 단일 서사 문서 [`NARRATIVE.md`](NARRATIVE.md) 안의 [3. 강점 지도], [4. 회복탄력성 서사], [6. 자기소개서 초안] 섹션 위치 또는 포트폴리오 웹([https://skt-aleph-jinyeong-myritual-agent.vercel.app](https://skt-aleph-jinyeong-myritual-agent.vercel.app)) 상단의 `#ritual-agent` (리추얼 에이전트) 5개 탭에서 확인합니다.
+2. **② 무엇을 하나요 (3단계 이내)**:
+   - **1단계**: 서사 문서 첫머리(웹 01/02 탭)에서 본인 이름(`장진영`), 30일 리추얼 발췌 대목(날짜 포함), 에이전트 5대 규칙과 우선순위 1줄을 확인합니다.
+   - **2단계**: `[3. 상위 3대 강점 지도]` 섹션(웹 03 탭)에서 3대 핵심 강점과 학생이 비판적으로 지운 항목 3건 및 지운 이유를 확인합니다.
+   - **3단계**: `[4. 회복탄력성 서사]` 및 `[6. 자기소개서 초안]` 섹션(웹 04/05 탭)에서 3부 회복탄력성 서사(3인칭 초안/1인칭 완성본 대조), 동료 2인 무명 피드백, 약 1,000자 자기소개서 초안, 1~8번 과제 매핑 포트폴리오 뼈대를 확인합니다.
+3. **③ 무엇이 보이면 통과**:
+   - 서사 문서 첫머리에 학생 본인 이름(`장진영`)이 명시되어 있고, 리추얼 발췌 대목(날짜 포함), 에이전트 5대 규칙 및 우선순위, 강점 지도 3개 및 지운 항목 3건/이유, 3인칭/1인칭 서사, 동료 2인의 무명 피드백, 약 1,000자 자기소개서 초안(이름, 강점 셋, 고비, 비전, 직접 쓴 첫/마지막 문장), 1~8번 과제 매핑 포트폴리오 뼈대가 온전히 보이면 통과입니다.
+4. **④ 안 될 때**:
+   - 로그인/비밀번호 입력 창이 요구되거나, 본인 이름 외 타인의 실명/개인 연락처가 노출되거나, 지운 항목 및 이유가 누락되어 있거나, 서사 문서가 비밀번호 없이 열리지 않는 경우입니다.
 
 ---
 
