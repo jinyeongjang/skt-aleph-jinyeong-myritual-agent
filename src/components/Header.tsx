@@ -141,7 +141,7 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
             className="group flex items-center gap-2 text-sm font-bold tracking-tight text-neutral-900 transition-opacity hover:opacity-80 dark:text-white"
           >
             <span className="relative tracking-tight">
-              jinyeongjang_myblog
+              jinyeongjang_myritual-agent
               <span className="absolute inset-x-0 -bottom-0.5 h-[1.5px] origin-left scale-x-0 rounded-full bg-neutral-900 transition-transform duration-200 ease-out group-hover:scale-x-100 dark:bg-white" />
             </span>
           </a>
