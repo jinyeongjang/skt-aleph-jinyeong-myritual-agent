@@ -125,7 +125,7 @@ export const RitualLogsTab: React.FC = () => {
               </h3>
               <p className="text-xs leading-relaxed text-neutral-100 drop-shadow-md sm:text-sm">
                 {timeSlot === 'morning'
-                  ? '매일 아침 가장 먼저 강의장에 도착해 복습하고 동료들과 페어로 문제를 해결하는 아침 기록'
+                  ? '매일 아침 평소보다 일찍 강의장에 도착해 복습하고 동료들과 페어로 문제를 해결하는 아침 기록'
                   : timeSlot === 'evening'
                     ? '하루의 고비를 딛고 일어서며 동료와 멘토에게 전한 따뜻한 감사와 회복탄력성 회고'
                     : '아침 7시 40분의 상쾌한 시작부터 밤 11시의 깊은 회고까지 날짜별로 연결된 13주 성장 아카이브'}
